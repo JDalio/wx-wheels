@@ -1,0 +1,15 @@
+<!--index.wxml-->
+<view class="container">
+
+  <view>
+    <button wx:if="{{imgUrl==''}}" bindtap='selectImage'>选择图片</button>
+    <block wx:else>
+      <image src="{{imgUrl}}"></image>
+      <text>{{imgInfo}}</text>
+    </block>
+  </view>
+
+  
+</view>
+
+
